@@ -63,8 +63,15 @@ a {
   }
 
   .badge:hover {
-    background-color: #f7f7f5;
+    background-color: var(--color-headings);
     color: #1c1c1b;
     transition: 1s;
   }
+}
+
+/* Icons */
+
+.icon {
+  color: var(--color-headings);
+  background-color: transparent;
 }
