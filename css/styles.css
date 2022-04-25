@@ -6,6 +6,8 @@
   --color-body: #1c1c1b;
 }
 
+/* Typography */
+
 html {
   font-size: 62.5%;
 }
@@ -29,4 +31,16 @@ h1 {
 
 h2 {
   font-size: 4rem;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.link-nav {
+  color: var(--color-headings);
+  font-size: 2rem;
+  font-weight: bold;
 }
