@@ -129,7 +129,6 @@ a {
 
 .media {
   display: flex;
-  border: solid 2px gold);
 }
 
 .media__image {
@@ -146,4 +145,30 @@ a {
 
 .media__body {
   margin: 0 2rem;
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+  row-gap: 2rem;
+  background-color: var(--color-secondary);
+  margin: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--2x3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.grid__item {
+  width: 20rem;
+  height: 20rem;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-headings);
+  color: var(--color-body);
 }
