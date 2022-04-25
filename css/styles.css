@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  font-family: roboto, Arial, Helvetica, sans-serif;
   color: var(--color-body);
+  font-family: roboto, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
 }
@@ -42,5 +42,29 @@ a {
 .link-nav {
   color: var(--color-headings);
   font-size: 2rem;
-  font-weight: bold;
+}
+
+/* Badges */
+
+.badge {
+  background-color: transparent;
+  color: var(--color-headings);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 4rem;
+  white-space: nowrap;
+  background-color: transparent;
+  width: 50vh;
+}
+
+@media screen and (min-width: 768px) {
+  .badge {
+    width: 30vh;
+  }
+
+  .badge:hover {
+    background-color: #f7f7f5;
+    color: #1c1c1b;
+    transition: 1s;
+  }
 }
