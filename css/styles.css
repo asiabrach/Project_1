@@ -124,3 +124,26 @@ a {
   background-color: var(--color-headings);
   color: var(--color-body);
 }
+
+/* Media */
+
+.media {
+  display: flex;
+  border: solid 2px gold);
+}
+
+.media__image {
+  border-radius: 50%;
+  margin-top: 1rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: lightgray;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
