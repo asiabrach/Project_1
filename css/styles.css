@@ -48,12 +48,12 @@ a {
 
 .badge {
   background-color: transparent;
+  background-color: transparent;
   color: var(--color-headings);
   font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 4rem;
   white-space: nowrap;
-  background-color: transparent;
   width: 50vh;
 }
 
@@ -74,4 +74,31 @@ a {
 .icon {
   color: var(--color-headings);
   background-color: transparent;
+}
+
+/* Buttons */
+
+.btn {
+  background-color: transparent;
+  background-color: transparent;
+  border: 3px solid var(--color-headings);
+  color: var(--color-headings);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+  white-space: nowrap;
+  width: 50vh;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 30vh;
+  }
+
+  .btn:hover {
+    background-color: var(--color-headings);
+    color: #1c1c1b;
+    transition: 1s;
+  }
 }
