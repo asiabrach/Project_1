@@ -75,6 +75,19 @@ a {
   }
 }
 
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
 /* Icons */
 
 .icon {
@@ -154,6 +167,7 @@ a {
   row-gap: 2rem;
   background-color: var(--color-secondary);
   margin: 2rem;
+  justify-content: space-evenly;
 }
 
 @media screen and (min-width: 1024px) {
@@ -171,4 +185,12 @@ a {
   align-items: center;
   background-color: var(--color-headings);
   color: var(--color-body);
+}
+
+/* Navigation Bar */
+
+.nav {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
 }
