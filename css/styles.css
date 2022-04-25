@@ -193,4 +193,33 @@ a {
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--color-headings);
+}
+
+.nav__list {
+  width: auto;
+  margin: 0;
+  display: flex;
+  font-size: 2rem;
+}
+
+.nav__item {
+  padding: 0.5 2rem;
+}
+
+.nav__item > a {
+  color: var(--color-headings);
+}
+.nav__item > a:hover {
+  color: white;
+  transition: color 0.5s;
+}
+
+@media screen and (min-width: 768px) {
 }
