@@ -29,6 +29,7 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
+  margin-left: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -105,7 +106,6 @@ a {
 
 .btn {
   background-color: transparent;
-  background-color: transparent;
   border: 3px solid var(--color-headings);
   color: var(--color-headings);
   cursor: pointer;
@@ -116,7 +116,7 @@ a {
   width: 50vh;
   display: inline-block;
   text-align: center;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,6 +127,7 @@ a {
 
   .btn:hover {
     background-color: var(--color-headings);
+    background-color: black;
     color: #1c1c1b;
     transition: 1s;
   }
@@ -228,7 +229,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  /* needs attention */
+  /* /* needs attention */
 }
 
 /* Hero */
@@ -237,4 +238,38 @@ a {
   background-image: url(/images/forest-bgc.jpg);
   object-fit: cover;
   height: auto;
+}
+
+/* Footer */
+
+.footer-nav {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--color-headings);
+}
+
+.footer-list {
+  width: auto;
+  margin: 0;
+  display: flex;
+  font-size: 2rem;
+}
+
+.nav__item {
+  padding: 0.5 2rem;
+}
+
+.nav__item > a {
+  color: var(--color-headings);
+}
+.nav__item > a:hover {
+  color: white;
+  transition: color 0.5s;
 }
