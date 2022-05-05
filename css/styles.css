@@ -160,19 +160,19 @@ a {
   width: 20rem;
   height: 20rem;
   background-color: lightgray;
-  float: left;
 }
 
 .media-person:nth-of-type(odd) {
   float: left;
 }
 .media-person:nth-of-type(even) {
-  float: left;
+  float: right;
 }
 
 .media__title {
   color: var(--color-body);
   margin-top: 2rem;
+  text-align: center;
 }
 
 .person-2 {
@@ -181,24 +181,23 @@ a {
 
 /* Grids */
 
-.grid .container {
+.services .container {
   background-color: var(--color-secondary);
   width: 960px;
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
-.grid-item {
+.services-item {
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  .services {
   }
 
-  .grid-item {
+  .services-item {
     width: 20rem;
     height: 20rem;
     /* margin-top: auto; */
@@ -215,6 +214,7 @@ a {
   background-color: var(--color-primary);
   padding: 0 5rem;
   width: 960px;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
