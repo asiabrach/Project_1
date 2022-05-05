@@ -38,7 +38,6 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  margin-top: 0;
 }
 
 h3 {
@@ -150,10 +149,10 @@ a {
 .media .container {
   display: flex;
   width: 960px;
-  grid-template: 100px auto 100px / 30fr 70fr;
+  flex-direction: column;
 }
 
-.media .media-person {
+.media-person {
   flex-shrink: 0;
   object-fit: cover;
   border-radius: 50%;
@@ -161,6 +160,14 @@ a {
   width: 20rem;
   height: 20rem;
   background-color: lightgray;
+  float: left;
+}
+
+.media-person:nth-of-type(odd) {
+  float: left;
+}
+.media-person:nth-of-type(even) {
+  float: left;
 }
 
 .media__title {
@@ -174,18 +181,14 @@ a {
 
 /* Grids */
 
-.grid {
-  background-color: var(--color-secondary);
-}
-
 .grid .container {
+  background-color: var(--color-secondary);
   width: 960px;
-  justify-content: space-evenly;
   display: grid;
+  flex-wrap: wrap;
 }
 
 .grid-item {
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -198,9 +201,9 @@ a {
   .grid-item {
     width: 20rem;
     height: 20rem;
-    margin-top: auto;
-    justify-content: center;
-    align-items: center;
+    /* margin-top: auto; */
+    justify-content: space-around;
+    align-items: stretch;
     background-color: var(--color-headings);
     color: var(--color-body);
   }
@@ -208,12 +211,9 @@ a {
 
 /* Navigation Bar */
 
-.nav {
-  background-color: var(--color-primary);
-  padding: 0 1rem;
-}
-
 .nav .container {
+  background-color: var(--color-primary);
+  padding: 0 5rem;
   width: 960px;
   display: flex;
   justify-content: space-between;
@@ -249,12 +249,9 @@ a {
 
 /* Hero */
 
-.hero {
+.hero .container {
   background-image: url(/images/forest-bgc.jpg);
   object-fit: cover;
-}
-
-.hero .container {
   height: 100vh;
   width: 960px;
   display: flex;
@@ -289,9 +286,5 @@ a {
 }
 
 .nav__item {
-  /* padding: 0.5 2rem; */
+  padding: 0.5 2rem;
 }
-
-/* .nav__item > a {
-  color: var(--color-headings);
-} */
