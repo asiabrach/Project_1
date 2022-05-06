@@ -30,6 +30,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-left: 3rem;
+  padding: 2rem;
 }
 
 h1 {
@@ -42,6 +43,15 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+.container {
+  width: 960px;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  transition: 1s;
 }
 
 /* Links */
@@ -148,7 +158,6 @@ a {
 
 .media .container {
   display: flex;
-  width: 960px;
   flex-direction: column;
 }
 
@@ -179,18 +188,40 @@ a {
   text-align: right;
 }
 
+.new-line::before {
+  display: block;
+}
+
 /* Grids */
+
+.services {
+  background-color: var(--color-secondary);
+  width: 960px;
+}
 
 .services .container {
   background-color: var(--color-secondary);
-  width: 960px;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.services-title {
+  margin-left: 3rem;
 }
 
 .services-item {
-  margin: 0 auto;
+  width: 20rem;
+  height: 20rem;
+  background-color: var(--color-headings);
+  color: var(--color-body);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -198,13 +229,9 @@ a {
   }
 
   .services-item {
-    width: 20rem;
-    height: 20rem;
     /* margin-top: auto; */
     justify-content: space-around;
     align-items: stretch;
-    background-color: var(--color-headings);
-    color: var(--color-body);
   }
 }
 
@@ -213,7 +240,6 @@ a {
 .nav .container {
   background-color: var(--color-primary);
   padding: 0 5rem;
-  width: 960px;
   height: 5rem;
   display: flex;
   justify-content: space-between;
@@ -253,7 +279,6 @@ a {
   background-image: url(/images/forest-bgc.jpg);
   object-fit: cover;
   height: 100vh;
-  width: 960px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,7 +293,6 @@ a {
 }
 
 .nav .container {
-  width: 960px;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -287,4 +311,10 @@ a {
 
 .nav__item {
   padding: 0.5 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav.container {
+    flex-direction: column;
+  }
 }
