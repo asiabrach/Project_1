@@ -29,8 +29,6 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
-  margin-left: 3rem;
-  padding: 2rem;
 }
 
 h1 {
@@ -47,11 +45,7 @@ h3 {
 
 .container {
   width: 960px;
-}
-
-.container:hover {
-  transform: scale(1.05);
-  transition: 1s;
+  margin: 0 auto;
 }
 
 /* Links */
@@ -119,7 +113,6 @@ a {
   border: 3px solid var(--color-headings);
   color: var(--color-headings);
   cursor: pointer;
-  margin-left: 3rem;
   font-size: 2rem;
   font-weight: 600;
   padding: 10px 30px;
@@ -152,6 +145,9 @@ a {
 
 /* Media */
 
+.media {
+}
+
 .media-title {
   color: var(--color-headings-2);
 }
@@ -165,27 +161,36 @@ a {
   flex-shrink: 0;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 1rem;
   width: 20rem;
   height: 20rem;
-  background-color: lightgray;
 }
 
 .media-person:nth-of-type(odd) {
-  float: left;
+  margin: 2rem 4rem 0 0;
 }
 .media-person:nth-of-type(even) {
-  float: right;
+  margin: 2rem 0 0 4rem;
 }
 
-.media__title {
-  color: var(--color-body);
-  margin-top: 2rem;
-  text-align: center;
+.media-person-1 {
+  display: flex;
 }
-
-.person-2 {
+.media-person-2 {
+  display: flex;
+  flex-direction: row-reverse;
   text-align: right;
+}
+
+.media__name {
+  color: var(--color-body);
+  display: flex;
+}
+
+.media__name:nth-of-type(odd) {
+  justify-content: start;
+}
+.media__name:nth-of-type(even) {
+  justify-content: end;
 }
 
 .new-line::before {
@@ -200,7 +205,6 @@ a {
 }
 
 .services .container {
-  background-color: var(--color-secondary);
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -211,7 +215,8 @@ a {
 }
 
 .services-title {
-  margin-left: 3rem;
+  text-align: left;
+  flex: 1 1 100%;
 }
 
 .services-item {
@@ -235,11 +240,19 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .services-item:hover {
+    transform: scale(1.05);
+    transition: 1s;
+  }
+}
+
 /* Navigation Bar */
 
-.nav .container {
+.nav {
   background-color: var(--color-primary);
-  padding: 0 5rem;
+}
+.nav .container {
   height: 5rem;
   display: flex;
   justify-content: space-between;
@@ -269,16 +282,24 @@ a {
   transition: color 0.5s;
 }
 
+.nav-company {
+  color: var(--color-headings);
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   /* /* needs attention */
 }
 
 /* Hero */
 
-.hero .container {
+.hero {
   background-image: url(/images/forest-bgc.jpg);
   object-fit: cover;
   height: 100vh;
+}
+
+.hero .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
