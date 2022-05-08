@@ -157,7 +157,7 @@ a {
   flex-direction: column;
 }
 
-.media-person {
+.media-photo {
   flex-shrink: 0;
   object-fit: cover;
   border-radius: 50%;
@@ -165,10 +165,11 @@ a {
   height: 20rem;
 }
 
-.media-person:nth-of-type(odd) {
+.media-photo:nth-of-type(odd) {
   margin: 2rem 4rem 0 0;
 }
-.media-person:nth-of-type(even) {
+
+.media-photo:nth-of-type(even) {
   margin: 2rem 0 0 4rem;
 }
 
@@ -201,10 +202,10 @@ a {
 
 .services {
   background-color: var(--color-secondary);
-  width: 960px;
 }
 
 .services .container {
+  width: 960px;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -229,16 +230,16 @@ a {
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 768px) {
   .services {
   }
 
   .services-item {
-    /* margin-top: auto; */
+    margin-top: auto;
     justify-content: space-around;
     align-items: stretch;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .services-item:hover {
