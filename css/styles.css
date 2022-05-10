@@ -24,28 +24,28 @@ h2,
 h3 {
   color: var(--color-headings);
   font-weight: bold;
+  margin: 30px 0;
 }
 
 h1 {
   font-size: 36px;
-  line-height: 42.19px;
 }
 
 h2 {
   font-size: 18px;
-  line-height: 21.09px;
-  margin-right: 10rem;
+  padding-bottom: 2rem;
 }
 
 h3 {
-  font-size: 18px;
   color: var(--color-body);
+  font-size: 18px;
   padding-bottom: 2rem;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 
 /* Links */
@@ -63,10 +63,10 @@ a {
 /* Lists */
 
 .list {
-  list-style: none;
-  padding-left: 0;
   color: var(--color-headings);
   display: flex;
+  list-style: none;
+  padding-left: 0;
 }
 
 .list--inline .list__item {
@@ -77,8 +77,8 @@ a {
 /* Icons */
 
 .icon {
-  color: var(--color-headings);
   background-color: transparent;
+  color: var(--color-headings);
 }
 
 /* Buttons */
@@ -112,9 +112,9 @@ a {
   background-color: var(--color-primary);
 }
 .nav .container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 0;
 }
 
@@ -123,19 +123,16 @@ a {
 }
 
 .nav__list {
-  width: auto;
-  margin: 0;
   display: flex;
   font-size: 2rem;
+  margin: 0;
+  width: auto;
 }
 
 .nav__item {
   padding: 0.5 2rem;
 }
 
-.nav__item > a {
-  color: var(--color-headings);
-}
 .nav__item > a:hover {
   color: white;
   transition: color 0.5s;
@@ -150,24 +147,21 @@ a {
 
 .hero {
   background-image: url(/images/forest-bgc.jpg);
-  width: 100%;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
+  overflow: hidden;
+  width: 100%;
 }
 
 .hero .container {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
 }
 
 /* About */
-
-.about {
-}
 
 .about-title {
   color: var(--color-headings-2);
@@ -176,16 +170,15 @@ a {
 .about-body {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
 }
 
 .about-photo {
-  flex-shrink: 0;
-  object-fit: cover;
   border-radius: 50%;
-  width: 197px;
+  flex-shrink: 0;
   height: 197px;
-  /* margin: 5rem 4rem 0 4rem; */
+  object-fit: cover;
+  width: 197px;
+  margin: 2rem 2rem 0 2rem;
 }
 
 .about-person-1 {
@@ -209,47 +202,47 @@ a {
 }
 
 .services .container {
-  width: 960px;
-  height: auto;
+  align-content: space-around;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  height: auto;
   justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
+  text-align: center;
+  width: 960px;
 }
 
 .services-title {
-  text-align: left;
   flex: 1 1 100%;
+  text-align: left;
 }
 
 .services-items {
+  align-items: center;
   background-color: var(--color-headings);
+  box-shadow: 0 8px 4px -4px #4f4f4f;
   color: var(--color-body);
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 8px 4px -4px #4f4f4f;
 }
 
 .services-item {
-  width: 20rem;
-  height: 20rem;
+  aspect-ratio: 1/1;
+  height: 33%;
   position: relative;
+  width: 33%;
 }
 
 .circle::after {
-  display: block;
-  content: " ";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   background-color: #e07a64;
-  position: absolute;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  height: 20px;
   left: -10px;
+  position: absolute;
   top: -10px;
+  width: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -277,14 +270,10 @@ a {
 }
 
 .footer-list {
-  width: auto;
-  margin: 0;
   display: flex;
   font-size: 2rem;
-}
-
-.nav__item {
-  /* padding: 0.5 2rem; */
+  margin: 0;
+  width: auto;
 }
 
 @media screen and (min-width: 768px) {
