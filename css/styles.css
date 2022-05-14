@@ -24,7 +24,7 @@ h2,
 h3 {
   color: var(--color-headings);
   font-weight: bold;
-  margin: 30px 0;
+  padding-bottom: 30px;
 }
 
 h1 {
@@ -116,6 +116,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+  height: 50px;
 }
 
 .nav__logo {
@@ -157,7 +158,7 @@ a {
   align-content: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 50px);
   justify-content: center;
 }
 
@@ -183,11 +184,13 @@ a {
 
 .about-person-1 {
   display: flex;
+  align-items: center;
 }
 .about-person-2 {
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
+  align-items: center;
 }
 
 .about-name {
@@ -218,19 +221,29 @@ a {
 }
 
 .services-items {
-  align-items: center;
-  background-color: var(--color-headings);
-  box-shadow: 0 8px 4px -4px #4f4f4f;
   color: var(--color-body);
   display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
   justify-content: center;
+  align-items: center;
 }
 
 .services-item {
+  box-shadow: 0 8px 4px -4px #4f4f4f;
+  background-color: var(--color-headings);
   aspect-ratio: 1/1;
-  height: 33%;
+  width: 25%;
   position: relative;
-  width: 33%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.new-line {
+  font-size: 18px;
 }
 
 .circle::after {
@@ -265,8 +278,9 @@ a {
   padding: 0.5rem 0;
 }
 
-.link-nav {
+.link-footer {
   color: var(--color-headings);
+  margin: 0.5rem;
 }
 
 .footer-list {
