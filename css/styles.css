@@ -46,13 +46,9 @@ h3 {
 }
 
 .container {
-<<<<<<< HEAD
-  width: 100%;
-=======
->>>>>>> f328d96dabc069f79f9749595c2201ca324a042f
   margin: 0 auto;
   padding: 2rem 0;
-  width: 960px;
+  width: 100%;
 }
 
 /* Links */
@@ -275,7 +271,6 @@ a {
   margin: 0;
   width: auto;
 }
-<<<<<<< HEAD
 
 @media screen and (min-width: 768px) {
   .btn {
@@ -568,5 +563,3 @@ a {
     width: auto;
   }
 }
-=======
->>>>>>> f328d96dabc069f79f9749595c2201ca324a042f
